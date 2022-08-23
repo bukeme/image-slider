@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(226, 214, 43);
+}
+
+div.scroller {
+    width: 75%;
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.scroller img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scroller.active {
+    cursor: grabbing;
+}
